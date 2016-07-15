@@ -2,17 +2,12 @@
 
 <% @sections.each do | section | %>
 <!-- id only for text section! -->
-	<div id="text-section" class="text">
+	<div id="<%= section.section_name %>" class="<%= section.section_name %>">
 		<h1>section_name: <%= section.section_name %></h1>
-		<p>id: <%= section.id %></p>
-		<p>css_rules: <%= section.css_rules %></p>
 	</div>
 <% end %>
 
-<%=
-
-
----------------
+ -----------------------
 
 <div id="text-template">
 	<h1></h1>
