@@ -22,8 +22,11 @@ class SectionsController < ApplicationController
 		end
 
 		def css
-			@sections = Section.all 
-			render text: "h1 {color:green;}".html_safe
+			@sections = Section.all
+
+			@sections.each do |section|
+				render text: "#{section.css_rules}".html_safe
+			end
 		end
 
 		private
