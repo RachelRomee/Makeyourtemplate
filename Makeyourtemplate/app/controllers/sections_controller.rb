@@ -21,6 +21,11 @@ class SectionsController < ApplicationController
 			end
 		end
 
+		def css
+			@sections = Section.all 
+			render text: "h1 {color:green;}".html_safe
+		end
+
 		private
 
 		def section_params
