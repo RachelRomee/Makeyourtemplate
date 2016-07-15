@@ -16,3 +16,26 @@ Section.create(
   bear claw sweet lollipop halvah.
   	</p>"
 )
+
+Section.create(
+  section_name: "gallery",
+  css_rules: ".gallery .columns{width: 500px; display: inline-flex;} div{padding: 15px; width: 500px;} img{ height: 500px;}",
+  html_content: "
+  <div class='columns'>
+    <div>
+        <img src='http://vignette4.wikia.nocookie.net/breakingbad/images/e/e7/BB-S5B-Walt-590.jpg/revision/latest?cb=20130928055404'>
+        <h1>Walter White</h1>
+        <p>Walter White, a high school chemistry teacher and family man, learns he has inoperable lung cancer. To secure his family's financial future, he begins making meth with Jesse Pinkman, a former student. The two become known for their top-quality blue meth, but success has its complications: Walt finds himself in over his head in the drug underworld. Meanwhile, a DEA team led by Walt's brother-in-law, Hank Schrader, begins investigating Heisenberg, Walt's alter ego.</p>
+    </div>
+    <div>
+        <img src='https://upload.wikimedia.org/wikipedia/en/f/f2/Jesse_Pinkman2.jpg'>
+        <h1>Jesse Pinkman</h1>
+        <p>Jesse Pinkman is Walt's former student and partner in the meth business. He was never the brightest student, but has grown to be a skilled meth cook in his own right under Walt's guidance. Jesse initially handled the street part of the operation, though his blunders often required Walt's intervention. </p>
+    </div>
+    <div>
+        <img src='http://vignette2.wikia.nocookie.net/breakingbad/images/8/8b/MikeS5.jpg/revision/latest?cb=20120620015454'>
+        <h1>Mike Ehrmantraut</h1>
+        <p>Mike Ehrmantraut is Saul Goodman's fixer, his cleaner, his go-to guy for sticky situations. Jesse first meets Mike after the death of his girlfriend, Jane. Mike removes evidence and prepares the shell-shocked Jesse for his interview with the police. Mike sums up his M.O. as he prepares to leave Jesse's duplex: Do I need to state the obvious? he says. I was not here.</p>
+    </div>
+  </div>"
+)
