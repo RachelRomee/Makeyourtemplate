@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  section_name: MyString
+  css_rules: MyString
+
+two:
+  section_name: MyString
+  css_rules: MyString
