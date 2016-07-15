@@ -2,7 +2,7 @@
 
 <% @sections.each do | section | %>
 <!-- id only for text section! -->
-	<div id="<%= section.section_name %>" class="<%= section.section_name %>">
+	<div id="<%= section.section_name %>" class="<%= section.section_name %>" data-css="<%= section.css_rules  %>" >
 		<h1>section_name: <%= section.section_name %></h1>
 	</div>
 <% end %>
