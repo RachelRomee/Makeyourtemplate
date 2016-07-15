@@ -1,11 +1,18 @@
-
 // when you click on div render section options
 $(document).ready(function() {
 	$( "#textinput" ).hide();
 	$( "#text" ).click(function() {
 		$( "#textinput" ).show();
 	});
-});
+
+//     $( "#text" ).click(function() {
+//         var styles = $(this).data("css")
+//
+//       console.log($(this));
+//         ( $("#text-choices").html(styles));
+//     });
+//
+// });
 
 var color;
 
