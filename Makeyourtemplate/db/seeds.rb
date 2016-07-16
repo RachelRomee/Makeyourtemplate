@@ -1,4 +1,19 @@
 Section.create(
+  section_name: "navigation",
+  css_rules: ".navigation { padding-bottom: 10px; float_left:100px; width: 100%;  css_rules: display: inline-flex; width: 100% }",
+  html_content: "
+  <div class='navbar'>
+   <ul class='navbar-ul'>
+     <li><a href='#'>About</a></li>
+     <li><a href='#'>gallery</a></li>
+     <li><a href='#'>text</a></li>
+     <li><a href='#'>contact</a></li>
+     <li><a href='#'>footer</a></li>
+  </ul>
+  </div>"
+)
+
+Section.create(
   section_name: "text",
   css_rules: ".text h1{color:black; background-color:yellow;} p{color:blue; background-color:white}",
   html_content: "<h1>Title</h1>
@@ -19,7 +34,7 @@ Section.create(
 
 Section.create(
   section_name: "gallery",
-  css_rules: ".gallery .columns{width: 500px; display: inline-flex;} div{padding: 15px; width: 500px;} img{ height: 500px;}",
+  css_rules: ".gallery .columns{width: 100%; display: inline-flex;} div{padding: 15px; width: 100%;} img{ height: 200px;}",
   html_content: "
   <div class='columns'>
     <div>
@@ -58,4 +73,17 @@ Section.create(
       <br>
       <input type="button" name="Send"  value="Send" />
 </form>'
+)
+
+Section.create(
+  section_name: "footer",
+  css_rules: ".footer {margin: 0 auto; margin-bottom: -5px; display: inline-flex; width: 100%}",
+  html_content:"
+  <div class='footerdiv'>
+   <ul class='footer-ul'>
+   <ul class='footer-ul li a'>
+      <li><a href='#'> terms of Service</a></li>
+      <li><a href='#'> use our colors</a></li>
+   </ul>
+  </div>"
 )
