@@ -24,14 +24,18 @@ function element_select(el, id) {
 	$('#'+id).addClass('activeselect').siblings().removeClass('activeselect');
 }
 
-// get user input
+// get Color input
 function colorInput(color) {
-	// get html element to style
 	var el = document.getElementsByClassName("activeselect")[0].innerHTML;
 	return window["text_" + el + "_color"] = color;
+}
+// get Color input
+function fontInput(font) {
+	var el = document.getElementsByClassName("activeselect")[0].innerHTML;
+	console.log(font);	
+	return window["text_" + el + "_font"] = font;
 
 }
-
 
 // make string of user input
 function createCssString() {

@@ -1,6 +1,6 @@
 <h1>Preview</h1>
 
-<div id="text_preview" >
+<span id="text_preview" >
 <% @sections.each do | section | %>
 		<div id="<%= section.section_name %>" class="<%= section.section_name %>">
 			<%= raw section.html_content %>
