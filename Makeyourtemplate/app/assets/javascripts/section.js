@@ -1,4 +1,9 @@
 
+var text_db;
+var text_h1_color = "";
+var text_p_color = "";
+var text_h1_font = "";
+var text_p_font = "";
 
 // when you click on div render section options
 // TEXT SECTION
@@ -13,11 +18,7 @@ $(document).ready(function() {
 	});
 });
 
-var text_db;
-var text_h1_color = "";
-var text_p_color = "";
-var text_h1_font = "";
-var text_p_font = "";
+
 
 // element select buttons
 function element_select(el, id) {
@@ -32,16 +33,16 @@ function colorInput(color) {
 // get Color input
 function fontInput(font) {
 	var el = document.getElementsByClassName("activeselect")[0].innerHTML;
-	console.log(font);	
+	console.log(font);
 	return window["text_" + el + "_font"] = font;
-
 }
 
 // make string of user input
 function createCssString() {
-	text_db = ".text h1 {color:" + text_h1_color + "} p{color:" + text_p_color + "}";
+	text_db = ".text h1 {color:" + text_h1_color + "font-family: '" + text_h1_font + "'} .text p {color:" + text_p_color + "; font-family: '" + text_p_font + "'}";
 	console.log(text_db);
 	submitUserInput(text_db, "text");
+	return text_db;
 }
 
 // SUBMITBUTTON

@@ -1,6 +1,6 @@
 Section.create(
   section_name: "text",
-  css_rules: ".text h1{color:black; font-family:'Roboto', sans-serif;} p{color:blue; font-family:'Helvetica', sans-serif;}",
+  css_rules: ".text > h1{color:black; font-family:'Roboto', sans-serif;} .text p{color:blue; font-family:'Helvetica', sans-serif;}",
   html_content: "<h1>Title</h1>
   	<p>
   		Gummies wafer marzipan powder jujubes snaps. ice cream lemon drops jelly beans
@@ -19,7 +19,7 @@ Section.create(
 
 Section.create(
   section_name: "gallery",
-  css_rules: ".gallery .columns{width: 500px; display: inline-flex;} div{padding: 15px; width: 500px;} img{ height: 500px;}",
+  css_rules: ".gallery .columns{width: 500px; display: inline-flex;} .gallery div{padding: 15px; width: 500px;} img{ height: 500px;}",
   html_content: "
   <div class='columns'>
     <div>
@@ -42,8 +42,8 @@ Section.create(
 
 
 Section.create(
-  section_name: "form",
-  css_rules: ".form {margin: 0 auto; width: 400px; padding: 1em;} input, textarea{width: 300px; box-sizing: border-box; margin-top: 7px; margin-bottom: 7px;} ",
+  section_name: "formsection",
+  css_rules: ".form_section .form {margin: 0 auto; width: 400px; padding: 1em;} .formsection input, textarea{width: 300px; box-sizing: border-box; margin-top: 7px; margin-bottom: 7px;} ",
   html_content: '
     <form>
       Name:<br>
