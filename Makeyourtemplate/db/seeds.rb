@@ -22,7 +22,7 @@ Section.create(
   html_content: "
   <div class='navbar'>
    <ul class='navbar-ul'>
-     <li><a href='#'>About</a></li>
+     <li><h3 href='#'>home</h3></li>
      <li><a href='#'>gallery</a></li>
      <li><a href='#'>text</a></li>
      <li><a href='#'>contact</a></li>

@@ -1,2 +1,7 @@
 #left_side { overflow-y: auto; float: left; width: 40%;}
 #right_side { overflow-y: auto; float: right; width: 40%;}
+
+hr {
+  height: 3px;
+  background-color: darkgrey;
+}
