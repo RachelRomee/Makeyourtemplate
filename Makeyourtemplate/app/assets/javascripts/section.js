@@ -1,5 +1,4 @@
-var text_db;
-var text_h1_color = "pink";
+
 
 // when you click on div render section options
 // TEXT SECTION
@@ -7,12 +6,16 @@ $(document).ready(function() {
 	$( "#text_h1input" ).hide();
 	$( "#text_pinput" ).hide();
 	$( "#text" ).click(function() {
-		var textpreview = document.getElementById( "text_preview").innerHTML;
-		document.getElementById( "text_generator").innerHTML=textpreview;
+		var textpreview = document.getElementById("text_preview").innerHTML;
+		document.getElementById('text_generator').innerHTML = textpreview;
 		$( "#text_h1input" ).show();
 		$( "#text_pinput" ).show();
 	});
 });
+
+var text_db;
+var text_h1_color = "";
+var text_p_color = "";
 
 // element select buttons
 function element_select(el, id) {
@@ -23,28 +26,30 @@ function element_select(el, id) {
 function colorInput(color) {
 	// get html element to style
 	var el = document.getElementsByClassName("activeselect")[0].innerHTML;
-	text_h1_color = color;
+	return window["text_" + el + "_color"] = color;
+
 }
 
 
 // make string of user input
 function createCssString() {
-	text_db = ".text h1 {color:" + text_h1_color + "}";
+	text_db = ".text h1 {color:" + text_h1_color + "} p{color:" + text_p_color + "}";
 	console.log(text_db);
-	submitUserInput(text_db);
+	submitUserInput(text_db, "text");
 }
 
 // SUBMITBUTTON
-function submitUserInput(db) {
+function submitUserInput(db, sectionName) {
+	console.log(db);
 	// send user data to database
-	// 	$.ajax({
-	//   type: "POST",
-	//   url: "/sections/" + $(this).attr("id"),
-	//   data: { css_rules: text_db }
-	// })
+		$.ajax({
+	  type: "PUT",
+	  url: "/sections/" + sectionName,
+	  data: { section: { css_rules: db } }
+	})
 	// update section.css_rules
 	//  location.reload();
-	 console.log(db);
+
 }
 
 //

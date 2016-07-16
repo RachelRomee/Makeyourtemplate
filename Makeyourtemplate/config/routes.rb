@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'sections#index'
 
+  put 'sections/:section_name' => 'sections#update'
   get '/css' => 'sections#css'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
