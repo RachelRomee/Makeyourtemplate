@@ -1,9 +1,21 @@
-<h1> Make your template - woohoooo </h1>
+<div>
+  <div id="container">
+     <div id="header">
+     <%= render 'navbar' %>
+     </div>
+     <div id="body">
+       <h1> Make your template - woohoooo </h1>
 
+       <!-- Generator -->
+       <%= render 'generator' %>
 
-<!-- Generator -->
-<%= render 'generator' %>
+       <!-- Template view -->
+       <%= render 'preview' %>
+     </div>
+     <div id="footer">
+       <%= render 'footer' %>
 
+     </div>
+  </div>
 
-<!-- Template view -->
-<%= render 'preview' %>
+</div>
