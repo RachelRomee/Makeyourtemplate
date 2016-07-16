@@ -2,9 +2,9 @@
 
 <!-- Here we render the section preview after user clicks the section preview -->
 <h3>Click on a section on the left to load </h3>
-<span id="text_generator">
+<div id="text_generator" class="sectionpreview">
 
-</span>
+</div>
 
 
 <!-- Show the input choices -->
@@ -18,28 +18,31 @@
 
 <h3>Change Colors</h3><br />
 <div class="fontcolors" style="display: inline-flex;">
-    <button id="color_red" onclick="colorInput('red')" style="width: 200px; height: 40px; margin:5px; color:red;">Red font</button>
-    <button id="color_blue" onclick="colorInput('blue')" style="width: 200px; height: 40px; margin:5px; color:blue;">Blue font</button>
-    <button id="color_green" onclick="colorInput('green')" style="width: 200px; height: 40px; margin:5px; color:green;">Green font</button>
+    <button onclick="colorInput('red')" style="width: 200px; height: 40px; margin:5px; color:red;">Red font</button>
+    <button onclick="colorInput('blue')" style="width: 200px; height: 40px; margin:5px; color:blue;">Blue font</button>
+    <button onclick="colorInput('green')" style="width: 200px; height: 40px; margin:5px; color:green;">Green font</button>
 </div>
 <br />
 
 <h3>Change Font </h3>
 <div class = "fonts" style="display: inline-flex;">
-    <div class="lato_font">
-      <img src="http://www.dafontfree.com/wp-content/post-font-image/post-image/lato-regular-font.png" onclick="latofont()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Lato', sans-serif;" />
+    <div onclick="fontInput('Lato')" class="lato_font">
+      <img src="http://www.dafontfree.com/wp-content/post-font-image/post-image/lato-regular-font.png" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Lato', sans-serif;" />
     </div>
 
-    <div class = "indie_font">
-        <img src="http://www.fontriver.com/i/fonts/indie_flower/indieflower_preview.jpg" onclick="indiefont()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Indie Flower', cursive;">
+    <div class = "indie_font" onclick="fontInput('Indie Flower')">
+        <img src="http://www.fontriver.com/i/fonts/indie_flower/indieflower_preview.jpg"  style="width: 200px; height: 40px; margin:5px; fontFamily: 'Indie Flower', cursive;">
     </div>
 
-    <div class = "yellowtail_font">
-        <img src="http://content.altfonts.com:88/img/Y/E/Yellowtail.png" onclick="yellowtail()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Yellowtail', cursive;">
+    <div class = "yellowtail_font" onclick="fontInput('Yellowtail')">
+        <img src="http://content.altfonts.com:88/img/Y/E/Yellowtail.png"  style="width: 200px; height: 40px; margin:5px; fontFamily: 'Yellowtail', cursive;">
     </div>
 </div>
-
 <!-- Submit button that triggers update method -->
 <div>
 	<a class="submitbtn" href="#" onclick="createCssString()">Send</a>
+</div>
+
+<div>
+	<a download href="http://localhost:3000/css">Download</a>
 </div>

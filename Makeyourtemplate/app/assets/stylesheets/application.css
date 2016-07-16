@@ -22,8 +22,17 @@ body {
   background-color: pink;
 }
 
+.sectionpreview {
+  border: 1px dotted #ddd;
+  min-height: 60px;
+}
+
 .submitbutton {
   width: 40px;
   height: 30px;
   background-color: blue;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
