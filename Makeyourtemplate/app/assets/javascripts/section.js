@@ -11,6 +11,11 @@ $(document).ready(function() {
 	});
 });
 
+function text_select_h1() {
+	// this...?
+	// keep selected until click on other or reload
+}
+
 
 // SUBMITBUTTON
 function submitUserInput() {
@@ -19,7 +24,7 @@ function submitUserInput() {
 	 location.reload();
 }
 
-// 
+//
 // BENBENBENBENBEN
 //     $( "#text" ).click(function() {
 //         var styles = $(this).data("css")
