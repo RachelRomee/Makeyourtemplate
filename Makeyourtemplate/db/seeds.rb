@@ -39,3 +39,42 @@ Section.create(
     </div>
   </div>"
 )
+
+Section.create(
+  section_name: "navigation",
+  css_rules: ".navigation .navbar{ padding-bottom: 10px; float_left:100px; width: 100%;}
+  .navbar-ul{ margin: 0 auto; background: transparent; margin-bottom: -5px; display:
+  inline-block; float: none; list-style-type: none;
+  width: 100%;},
+  .navbar-ul li{display: inline; float: left; color:#000;; font-weight: 500;}",
+  html_content: "
+  <div class='navbar'>
+   <ul class='navbar-ul'>
+     <li><a href='#'>About</a></li>
+     <li><a href='#'>gallery</a></li>
+     <li><a href='#'>text</a></li>
+     <li><a href='#'>contact</a></li>
+     <li><a href='#'>footer</a></li>
+  </ul>
+  </div>"
+  )
+
+Section.create(
+  section_name: "footer",
+  css_rules: ".footer.footerdiv{margin: 0 auto; margin-bottom: -5px; text-transform: uppercase; float_left:100px;},
+  .footer-ul{ margin: 0 auto; background: transparent; bottom: -5px; display:
+    inline-block; float: none; list-style-type: none; width: 60%; },
+    .footer-ul li a{ display: block; padding: 10px; text-align: center; font-size: 14px;
+    font-weight: 700;
+    background: transparent !important;
+    text-transform: uppercase; }",
+  html_content:"
+  <div class='footerdiv'>
+   <ul class='footer-ul'>
+   <ul class='footer-ul li a'>
+      <li><a href='#'> terms of Service</a></li>
+      <li><a href='#'> use our colors</a></li>
+    
+   </ul>
+  </div>"
+)
