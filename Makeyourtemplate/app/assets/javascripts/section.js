@@ -4,7 +4,9 @@ $(document).ready(function() {
 	$( "#text" ).click(function() {
 		$( "#textinput" ).show();
 	});
+});
 
+// BENBENBENBENBEN
 //     $( "#text" ).click(function() {
 //         var styles = $(this).data("css")
 //
@@ -14,19 +16,30 @@ $(document).ready(function() {
 //
 // });
 
-var color;
-
-// get color from user
-function colorInput() {
-	var color = document.getElementById("colorblock").style.backgroundColor;
-	document.getElementById('giveColor').style.color = color;
-	console.log(color);
 
 
-	var test = ".text h1 {color:" + color + "}";
-	console.log(test);
-	return color;
+
+// TEXT
+var text_h1_color;
+
+function textinput_h1_color() {
+	var text_h1_color = document.getElementById("textinput_h1_color").style.backgroundColor;
+	console.log(text_h1_color);
+	return text_h1_color;
 }
 
+var text_h1_backgroundcolor;
+
+function textinput_h1_backgroundcolor() {
+	var text_h1_backgroundcolor = document.getElementById("textinput_h1_backgroundcolor").style.backgroundColor;
+	console.log(text_h1_backgroundcolor);
+	return text_h1_backgroundcolor;
+}
+
+
+
+var test = ".text h1 {color:" + text_h1_color + " background-color:" + text_h1_backgroundcolor + "} ";
+
+console.log(test);
 
 // ajax
