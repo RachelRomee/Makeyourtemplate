@@ -16,6 +16,8 @@ $(document).ready(function() {
 var text_db;
 var text_h1_color = "";
 var text_p_color = "";
+var text_h1_font = "";
+var text_p_font = "";
 
 // element select buttons
 function element_select(el, id) {
