@@ -1,0 +1,11 @@
+<div class="homenavbar">
+  <ul class="homenavbar-ul">
+
+    <li><a href="#home" style="float_left">Home</a></li>
+  <% @sections.each do | section | %>
+    <li><a href="#<%= section.section_name %>"><%= section.section_name %></a></li>
+  <% end %>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">contact</a></li>
+ </ul>
+</div>

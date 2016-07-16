@@ -1,4 +1,37 @@
 Section.create(
+  section_name: "navigation",
+  css_rules: ".navigation {background-color: #F7BE81; float: right; display: inline-block; width: 100%},
+   .navbar-ul { list-style-type: none; list-style-type: none; margin: 0; padding: 0; text-align: center; display: inline-block; float: none;
+   }
+
+   .navbar-ul li {
+     float: right 55px;
+     display: inline-block;
+   }
+
+   .navbar-ul li a {
+     color: black;
+     font-size: 1.2em;
+     display: block;
+     padding: 14px 25px;
+     text-decoration: none; }
+
+   .navbar-ul li a:hover {
+     text-decoration: none;
+     color: #FFEBF3; }",
+  html_content: "
+  <div class='navbar'>
+   <ul class='navbar-ul'>
+     <li><a href='#'>About</a></li>
+     <li><a href='#'>gallery</a></li>
+     <li><a href='#'>text</a></li>
+     <li><a href='#'>contact</a></li>
+     <li><a href='#'>footer</a></li>
+  </ul>
+  </div>"
+)
+
+Section.create(
   section_name: "text",
   css_rules: ".text > h1{color:black; font-family:'Roboto', sans-serif;} .text p{color:blue; font-family:'Helvetica', sans-serif;}",
   html_content: "<h1>Title</h1>
@@ -19,7 +52,7 @@ Section.create(
 
 Section.create(
   section_name: "gallery",
-  css_rules: ".gallery .columns{width: 500px; display: inline-flex;} .gallery div{padding: 15px; width: 500px;} img{ height: 500px;}",
+  css_rules: ".gallery .columns{width: 100%; display: inline-flex;} .gallery div{padding: 15px; width: 100%;} .gallery img{ height: 200px;}",
   html_content: "
   <div class='columns'>
     <div>
@@ -58,4 +91,17 @@ Section.create(
       <br>
       <input type="button" name="Send"  value="Send" />
 </form>'
+)
+
+Section.create(
+  section_name: "footer",
+  css_rules: ".footer {margin: 0 auto; margin-bottom: -5px; display: inline-flex; width: 100%; background-color: grey; color: white;}",
+  html_content:"
+  <div class='footerdiv'>
+   <ul class='footer-ul'>
+   <ul class='footer-ul li a'>
+      <li><a href='#'> terms of Service</a></li>
+      <li><a href='#'> use our colors</a></li>
+   </ul>
+  </div>"
 )

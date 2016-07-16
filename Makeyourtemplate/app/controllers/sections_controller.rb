@@ -27,7 +27,10 @@ class SectionsController < ApplicationController
 
 				allsections << section.css_rules
 			end
-			render text: "#{allsections}".html_safe
+			# render text: "#{allsections}".html_safe
+			send_data "#{allsections}".html_safe,
+			:filename => "style.css",
+			:type => "text/plain"
 		end
 
 		private
