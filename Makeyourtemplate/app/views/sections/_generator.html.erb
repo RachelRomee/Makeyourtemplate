@@ -16,8 +16,30 @@
 
 <!-- Color and Font options -->
 
+<h3>Change Font colors</h3><br />
+<div class="fontcolors" style="display: inline-flex;">
+    <button id="red_font" onclick="redfont()" style="width: 200px; height: 40px; margin:5px; color:red;">Red font</button>
+    <button id="blue_font" onclick="bluefont()" style="width: 200px; height: 40px; margin:5px; color:blue;">Blue font</button>
+    <button id="green_font" onclick="greenfont()" style="width: 200px; height: 40px; margin:5px; color:green;">Green font</button>
+</div>
+<br />
 
-<br />
-<br />
+<h3>Change font family</h3>
+<div class = "fonts" style="display: inline-flex;">
+    <div class="lato_font">
+      <img src="http://www.dafontfree.com/wp-content/post-font-image/post-image/lato-regular-font.png" onclick="latofont()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Lato', sans-serif;" />
+    </div>
+
+    <div class = "indie_font">
+        <img src="http://www.fontriver.com/i/fonts/indie_flower/indieflower_preview.jpg" onclick="indiefont()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Indie Flower', cursive;">
+    </div>
+
+    <div class = "yellowtail_font">
+        <img src="http://content.altfonts.com:88/img/Y/E/Yellowtail.png" onclick="yellowtail()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Yellowtail', cursive;">
+    </div>
+</div>
+
 <!-- Submit button that triggers update method -->
-<button onclick="submitUserInput()">Send</button>
+<div>
+	<button onclick="submitUserInput()">Send</button>
+</div>
