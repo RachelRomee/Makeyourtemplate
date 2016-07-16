@@ -6,13 +6,11 @@
 <br>
 <hr>
 <!-- id only for text section! -->
-	<div id="sectionid_<%=number%>">
-		<h1><%= section.section_name %></h1>
-
-		<div id="<%= section.section_name %>" class="<%= section.section_name %>">
-			<%= raw section.html_content %>
-		</div>
-	<% number += 1 %>
-	</div>
+    <div id="sectionid_<%=number%>">
+        <div id="<%= section.section_name %>" class="<%= section.section_name %>">
+            <%= raw section.html_content %>
+        </div>
+    <% number += 1 %>
+    </div>
 </span>
 <% end %>
