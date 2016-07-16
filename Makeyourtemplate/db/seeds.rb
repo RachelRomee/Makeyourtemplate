@@ -1,6 +1,6 @@
 Section.create(
   section_name: "text",
-  css_rules: ".text h1{color:black; background-color:yellow;} p{color:blue; background-color:white}",
+  css_rules: ".text h1{color:black; font-family:'Roboto', sans-serif;} p{color:blue; font-family:'Helvetica', sans-serif;}",
   html_content: "<h1>Title</h1>
   	<p>
   		Gummies wafer marzipan powder jujubes snaps. ice cream lemon drops jelly beans
