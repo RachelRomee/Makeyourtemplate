@@ -19,7 +19,7 @@ Section.create(
 
 Section.create(
   section_name: "gallery",
-  css_rules: ".gallery .columns{width: 500px; display: inline-flex;} div{padding: 15px; width: 500px;} img{ height: 500px;}",
+  css_rules: ".gallery .columns{width: 100%; display: inline-flex;} div{padding: 15px; width: 100%;} img{ height: 200px;}",
   html_content: "
   <div class='columns'>
     <div>
