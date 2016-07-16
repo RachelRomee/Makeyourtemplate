@@ -19,8 +19,10 @@ var test_database;
 	return test_database;
 });
 
-function text_select_h1() {
-	// this...?
+function element_select(el, id) {
+	document.getElementById(id).style.backgroundColor="pink";
+
+
 	// keep selected until click on other or reload
 }
 
