@@ -39,7 +39,7 @@ function fontInput(font) {
 
 // make string of user input
 function createCssString() {
-	text_db = ".text h1 {color:" + text_h1_color + "font-family: '" + text_h1_font + "'} .text p {color:" + text_p_color + "; font-family: '" + text_p_font + "'}";
+	text_db = ".text h1 {color:" + text_h1_color + "; font-family: " + text_h1_font + ";} .text p {color:" + text_p_color + "; font-family: " + text_p_font + ";}";
 	console.log(text_db);
 	submitUserInput(text_db, "text");
 	return text_db;

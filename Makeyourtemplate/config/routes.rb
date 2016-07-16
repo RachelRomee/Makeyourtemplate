@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get '/css' => 'sections#css'
   get '/file' => 'sections#file'
 
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
