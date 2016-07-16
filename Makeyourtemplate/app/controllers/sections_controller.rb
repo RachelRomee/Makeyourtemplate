@@ -9,14 +9,14 @@ class SectionsController < ApplicationController
 	# to update the database with the user input
 		def update
 			@section = Section.find ( params[:id] )
-			@sections = Section.all
 
 			if @section.update_attributes( section_params )
-				redirect_to @sections
+				redirect_to action: :index
 			else
 				render 'index'
 			end
 		end
+		# respond to json
 
 		def css
 			@sections = Section.all
