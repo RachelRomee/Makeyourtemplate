@@ -3,13 +3,8 @@
 
 <span id="text_preview">
 <% @sections.each do | section | %>
-<br />
-<!-- id only for text section! -->
     <div class="<%= section.section_name %>" id="<%= section.section_name %>">
-        <div>
-            <%= raw section.html_content %>
-        </div>
+    <%= raw section.html_content %>
     </div>
-
 <% end %>
 </span>

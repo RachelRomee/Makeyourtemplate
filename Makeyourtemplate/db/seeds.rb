@@ -1,8 +1,7 @@
 
-
 Section.create(
   section_name: "text",
-  css_rules: ".text > h1{color:black; font-family:'Roboto', sans-serif;} .text p{color:blue; font-family:'Helvetica', sans-serif;}",
+  css_rules: ".text h1{color:black; font-family:'Roboto', sans-serif;} .text p{color:blue; font-family:'Helvetica', sans-serif;} ",
   html_content: "<h1>Title</h1>
   	<p>
   		Gummies wafer marzipan powder jujubes snaps. ice cream lemon drops jelly beans
@@ -21,7 +20,7 @@ Section.create(
 
 Section.create(
   section_name: "gallery",
-  css_rules: ".gallery .columns{width: 100%; display: inline-flex;} .gallery div{padding: 15px; width: 100%;} .gallery img{ height: 200px;}",
+  css_rules: ".gallery .columns{width: 100%; display: inline-flex;} .gallery div{padding: 15px; width: 100%;} .gallery img{ height: 200px;} ",
   html_content: "
   <div class='columns'>
     <div>
