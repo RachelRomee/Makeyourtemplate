@@ -1,2 +1,2 @@
-#left_side { overflow-y: auto; float: left; width: 40%;}
-#right_side { overflow-y: auto; float: right; width: 40%;}
+#left_side { overflow-y: auto; float: left; }
+#right_side { overflow-y: auto; float: right; }
