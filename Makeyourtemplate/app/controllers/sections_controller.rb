@@ -20,10 +20,13 @@ class SectionsController < ApplicationController
 
 		def css
 			@sections = Section.all
+			allsections = ""
 
 			@sections.each do |section|
-				render text: "#{section.css_rules}".html_safe
+
+				allsections << section.css_rules
 			end
+			render text: "#{allsections}".html_safe
 		end
 
 		private

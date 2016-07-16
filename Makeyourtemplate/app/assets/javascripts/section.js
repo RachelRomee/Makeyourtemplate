@@ -1,8 +1,12 @@
 // when you click on div render section options
+// TEXT SECTION
 $(document).ready(function() {
-	$( "#textinput" ).hide();
+	$( "#text_h1input" ).hide();
+	$( "#text_pinput" ).hide();
 	$( "#text" ).click(function() {
-		$( "#textinput" ).show();
+		// innerHTML: document.getElementById $( "text_generator") 
+		$( "#text_h1input" ).show();
+		$( "#text_pinput" ).show();
 	});
 });
 
@@ -15,31 +19,3 @@ $(document).ready(function() {
 //     });
 //
 // });
-
-
-
-
-// TEXT
-var text_h1_color;
-
-function textinput_h1_color() {
-	var text_h1_color = document.getElementById("textinput_h1_color").style.backgroundColor;
-	console.log(text_h1_color);
-	return text_h1_color;
-}
-
-var text_h1_backgroundcolor;
-
-function textinput_h1_backgroundcolor() {
-	var text_h1_backgroundcolor = document.getElementById("textinput_h1_backgroundcolor").style.backgroundColor;
-	console.log(text_h1_backgroundcolor);
-	return text_h1_backgroundcolor;
-}
-
-
-
-var test = ".text h1 {color:" + text_h1_color + " background-color:" + text_h1_backgroundcolor + "} ";
-
-console.log(test);
-
-// ajax
