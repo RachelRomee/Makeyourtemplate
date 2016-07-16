@@ -19,8 +19,10 @@ var test_database;
 	return test_database;
 });
 
+// selected
 function element_select(el, id) {
-	document.getElementById(id).style.backgroundColor="pink";
+
+	$('#'+id).addClass('active').siblings().removeClass('active');
 
 
 	// keep selected until click on other or reload

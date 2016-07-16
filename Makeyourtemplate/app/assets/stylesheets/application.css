@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.selectbtn.active {
+  background-color: pink;
+}
