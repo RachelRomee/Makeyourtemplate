@@ -1,10 +1,13 @@
 <h1> Make your template - woohoooo </h1>
 
-
+<div id="left_side" style="width: 50%;">
+    <!-- <iframe id="preview"> -->
+      <%= render 'preview' %>
+    <!-- </iframe> -->
+</div>
 <!-- Template view -->
-<%= render 'preview' %>
 
+<div id="right_side"style="width: 50%;">
 
-
-<!-- Generator -->
 <%= render 'generator' %>
+</div>

@@ -16,15 +16,15 @@
 
 <!-- Color and Font options -->
 
-<h3>Change Font colors</h3><br />
+<h3>Change Colors</h3><br />
 <div class="fontcolors" style="display: inline-flex;">
-    <button id="red_font" onclick="redfont()" style="width: 200px; height: 40px; margin:5px; color:red;">Red font</button>
-    <button id="blue_font" onclick="bluefont()" style="width: 200px; height: 40px; margin:5px; color:blue;">Blue font</button>
-    <button id="green_font" onclick="greenfont()" style="width: 200px; height: 40px; margin:5px; color:green;">Green font</button>
+    <button id="color_red" onclick="colorInput('red')" style="width: 200px; height: 40px; margin:5px; color:red;">Red font</button>
+    <button id="color_blue" onclick="colorInput('blue')" style="width: 200px; height: 40px; margin:5px; color:blue;">Blue font</button>
+    <button id="color_green" onclick="colorInput('green')" style="width: 200px; height: 40px; margin:5px; color:green;">Green font</button>
 </div>
 <br />
 
-<h3>Change font family</h3>
+<h3>Change Font </h3>
 <div class = "fonts" style="display: inline-flex;">
     <div class="lato_font">
       <img src="http://www.dafontfree.com/wp-content/post-font-image/post-image/lato-regular-font.png" onclick="latofont()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Lato', sans-serif;" />
@@ -41,5 +41,5 @@
 
 <!-- Submit button that triggers update method -->
 <div>
-	<button onclick="submitUserInput()">Send</button>
+	<a class="submitbtn" href="#" onclick="createCssString()">Send</a>
 </div>
