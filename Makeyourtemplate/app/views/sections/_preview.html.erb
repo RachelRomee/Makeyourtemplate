@@ -3,7 +3,7 @@
 <span id="text_preview">
 <% @sections.each do | section | %>
 <!-- id only for text section! -->
-	<h1>section_name: <%= section.section_name %></h1>
+	<h1><%= section.section_name %></h1>
 	<div id="<%= section.section_name %>" class="<%= section.section_name %>">
 	<%= raw section.html_content %>
 
