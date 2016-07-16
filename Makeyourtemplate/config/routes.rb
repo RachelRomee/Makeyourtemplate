@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   put 'sections/:section_name' => 'sections#update'
   get '/css' => 'sections#css'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
