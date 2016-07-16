@@ -1,24 +1,45 @@
 <h1>Generator</h1>
 
-<!-- Here we render the choices after user clicks the section preview -->
+<!-- Here we render the section preview after user clicks the section preview -->
+<h3>Click on a section on the left to load </h3>
+<span id="text_generator">
+
+</span>
 
 
+<!-- Show the input choices -->
 
-<div id="textinput">
-	<h3>h1</h3>
+<h3> Then	pick which element you want to edit</h3>
 
-	<div width="200px" height="200px" style="background-color:pink;" id="colorblock" onclick="colorInput()">&nbsp;</div>
+<button class="selectbtn" id="text_h1input" onclick="element_select('h1', 'text_h1input')">h1</button>
+<button class="selectbtn" id="text_pinput" onclick="element_select('p', 'text_pinput')">p</button>
 
-	<h3 id="giveColor">Hola</h3>
+<!-- Color and Font options -->
 
+<h3>Change Colors</h3><br />
+<div class="fontcolors" style="display: inline-flex;">
+    <button id="color_red" onclick="colorInput('red')" style="width: 200px; height: 40px; margin:5px; color:red;">Red font</button>
+    <button id="color_blue" onclick="colorInput('blue')" style="width: 200px; height: 40px; margin:5px; color:blue;">Blue font</button>
+    <button id="color_green" onclick="colorInput('green')" style="width: 200px; height: 40px; margin:5px; color:green;">Green font</button>
 </div>
+<br />
 
+<h3>Change Font </h3>
+<div class = "fonts" style="display: inline-flex;">
+    <div class="lato_font">
+      <img src="http://www.dafontfree.com/wp-content/post-font-image/post-image/lato-regular-font.png" onclick="latofont()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Lato', sans-serif;" />
+    </div>
 
+    <div class = "indie_font">
+        <img src="http://www.fontriver.com/i/fonts/indie_flower/indieflower_preview.jpg" onclick="indiefont()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Indie Flower', cursive;">
+    </div>
 
-<div id="text-choices">
-  <p>Choices here!</p>
+    <div class = "yellowtail_font">
+        <img src="http://content.altfonts.com:88/img/Y/E/Yellowtail.png" onclick="yellowtail()" style="width: 200px; height: 40px; margin:5px; fontFamily: 'Yellowtail', cursive;">
+    </div>
 </div>
-
 
 <!-- Submit button that triggers update method -->
-<button>Send</button>
+<div>
+	<a class="submitbtn" href="#" onclick="createCssString()">Send</a>
+</div>

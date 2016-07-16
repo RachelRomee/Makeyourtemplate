@@ -1,7 +1,7 @@
 Section.create(
   section_name: "text",
   css_rules: ".text h1{color:black; background-color:yellow;} p{color:blue; background-color:white}",
-  html_content: "<h1>Text Section</h1>
+  html_content: "<h1>Title</h1>
   	<p>
   		Gummies wafer marzipan powder jujubes snaps. ice cream lemon drops jelly beans
   snaps tootsie roll chocolate marshmallow cotton candy powder danish dessert
@@ -19,7 +19,7 @@ Section.create(
 
 Section.create(
   section_name: "gallery",
-  css_rules: ".gallery .columns{width: 500px; display: inline-flex;} div{padding: 15px; width: 500px;} img{ height: 500px;}",
+  css_rules: ".gallery .columns{width: 100%; display: inline-flex;} div{padding: 15px; width: 100%;} img{ height: 200px;}",
   html_content: "
   <div class='columns'>
     <div>
@@ -74,7 +74,27 @@ Section.create(
    <ul class='footer-ul li a'>
       <li><a href='#'> terms of Service</a></li>
       <li><a href='#'> use our colors</a></li>
-    
+
    </ul>
   </div>"
+)
+
+
+Section.create(
+  section_name: "form",
+  css_rules: ".form {margin: 0 auto; width: 400px; padding: 1em;} input, textarea{width: 300px; box-sizing: border-box; margin-top: 7px; margin-bottom: 7px;} ",
+  html_content: '
+    <form>
+      Name:<br>
+      <input type="text" name="name">
+      <br>
+      e-mail address:<br>
+      <input type="email" name="email">
+      <br>
+      message:<br>
+      <textarea rows="5" cols="19" name="description">
+      </textarea>
+      <br>
+      <input type="button" name="Send"  value="Send" />
+</form>'
 )

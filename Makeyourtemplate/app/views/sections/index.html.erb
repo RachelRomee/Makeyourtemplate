@@ -1,3 +1,5 @@
+<h1> Make your template - woohoooo </h1>
+
 <div>
   <div id="container">
      <div id="header">
@@ -6,16 +8,17 @@
      <div id="body">
        <h1> Make your template - woohoooo </h1>
 
+       <div id="left_side" style="width: 45%;">
+             <%= render 'preview' %>
+       </div>
+       <div id="right_side"style="width: 45%;">
        <!-- Generator -->
        <%= render 'generator' %>
+       </div>
 
-       <!-- Template view -->
-       <%= render 'preview' %>
-     </div>
      <div id="footer">
        <%= render 'footer' %>
 
      </div>
   </div>
-
 </div>
