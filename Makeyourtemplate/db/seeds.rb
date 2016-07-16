@@ -39,3 +39,23 @@ Section.create(
     </div>
   </div>"
 )
+
+
+Section.create(
+  section_name: "form",
+  css_rules: ".form {margin: 0 auto; width: 400px; padding: 1em;} input, textarea{width: 300px; box-sizing: border-box; margin-top: 7px; margin-bottom: 7px;} ",
+  html_content: '
+    <form>
+      Name:<br>
+      <input type="text" name="name">
+      <br>
+      e-mail address:<br>
+      <input type="email" name="email">
+      <br>
+      message:<br>
+      <textarea rows="5" cols="19" name="description">
+      </textarea>
+      <br>
+      <input type="button" name="Send"  value="Send" />
+</form>'
+)
