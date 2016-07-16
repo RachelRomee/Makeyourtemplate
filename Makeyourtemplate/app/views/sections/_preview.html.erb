@@ -1,16 +1,15 @@
 <h1>Preview</h1>
 
+
 <span id="text_preview">
-<% number = 1 %>
 <% @sections.each do | section | %>
-<br>
-<hr>
+<br />
 <!-- id only for text section! -->
-    <div id="sectionid_<%=number%>">
-        <div id="<%= section.section_name %>" class="<%= section.section_name %>">
+    <div class="<%= section.section_name %>" id="<%= section.section_name %>">
+        <div>
             <%= raw section.html_content %>
         </div>
-    <% number += 1 %>
     </div>
-</span>
+
 <% end %>
+</span>

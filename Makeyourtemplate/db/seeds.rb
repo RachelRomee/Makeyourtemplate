@@ -1,35 +1,4 @@
-Section.create(
-  section_name: "navigation",
-  css_rules: ".navigation {background-color: #F7BE81; float: right; display: inline-block; width: 100%},
-   .navbar-ul { list-style-type: none; list-style-type: none; margin: 0; padding: 0; text-align: center; display: inline-block; float: none;
-   }
 
-   .navbar-ul li {
-     float: right 55px;
-     display: inline-block;
-   }
-
-   .navbar-ul li a {
-     color: black;
-     font-size: 1.2em;
-     display: block;
-     padding: 14px 25px;
-     text-decoration: none; }
-
-   .navbar-ul li a:hover {
-     text-decoration: none;
-     color: #FFEBF3; }",
-  html_content: "
-  <div class='navbar'>
-   <ul class='navbar-ul'>
-     <li><h3 href='#'>home</h3></li>
-     <li><a href='#'>gallery</a></li>
-     <li><a href='#'>text</a></li>
-     <li><a href='#'>contact</a></li>
-     <li><a href='#'>footer</a></li>
-  </ul>
-  </div>"
-)
 
 Section.create(
   section_name: "text",

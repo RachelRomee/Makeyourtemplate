@@ -11,7 +11,7 @@ $(document).ready(function() {
 	$( "#text_h1input" ).hide();
 	$( "#text_pinput" ).hide();
 	$( "#text" ).click(function() {
-		var textpreview = document.getElementById("text_preview").innerHTML;
+		var textpreview = document.getElementById("text").innerHTML;
 		document.getElementById('text_generator').innerHTML = textpreview;
 		$( "#text_h1input" ).show();
 		$( "#text_pinput" ).show();
